@@ -1,3 +1,5 @@
+//to sort a array of numbers in ascending order using bubble sort algorith.
+
 fun main()
 {
 	var ar=arrayOf<Int>(11,22,13,43,25,6)
