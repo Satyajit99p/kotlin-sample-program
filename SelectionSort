@@ -1,0 +1,21 @@
+// sample selection sort algorithm in ascending order.
+
+
+fun main()
+{
+	var ar=arrayOf<Int>(11,22,13,43,25,6)
+	for (i in (0..(ar.size)-1))
+		{
+		var x=ar[i]
+		var m=i	
+		while( m> 0 && x < ar[m-1])
+			{
+				ar[m]=ar[m-1]
+				m--
+			}
+			ar[m] = x
+		}
+	println("sorted array is ")	
+	for (k in 0..ar.size)
+			println(ar[k])
+}
