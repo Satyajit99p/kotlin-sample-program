@@ -1,0 +1,23 @@
+// program to demostrate simple linear search algorithm.
+
+fun main()
+{
+	var ar=arrayOf<Int>(11,22,13,43,25,6)
+	println("enter the element to search")
+	var x=Integer.valueOf(readLine())
+	var c = 0
+	for (i in 0..ar.size-1)
+		{
+			
+			if(ar[i] == x)
+			{
+				println("element found - "+x)
+				c=1
+				break
+			}
+			
+		}
+	if(c == 0)
+				print("element not found")
+				
+}
