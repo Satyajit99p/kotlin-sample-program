@@ -1,0 +1,45 @@
+// progam to implement binary search to search user input element in an given array.
+
+fun main()
+{
+	var ar=arrayOf<Int>(11,22,13,43,25,6)
+	println("enter the element to search")
+	var x=Integer.valueOf(readLine())
+	var c = 0
+	for( i in (0..ar.size-1))
+		for(j in (0..i))
+			{
+				if(ar[j] < ar[i])
+					{
+						var t=ar[i]
+						ar[i]=ar[j]
+						ar[j]=t
+					}
+			}
+	var c=0
+	var f=0
+	var l=ar.size-1
+	var mid=(f+l)/2
+	for(i in(f..l))
+		{
+			
+			var mid=(f+l)/2
+			if(x < ar[mid])
+				{
+					l=mid
+				}
+			else if(x > ar[mid])
+				{
+					f=mid
+				}
+			else
+				{
+				
+				println("element found")
+				c=1
+				}
+		}
+	if(c==0)
+		println("element not found")
+				
+}
