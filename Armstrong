@@ -1,0 +1,21 @@
+// pogram to check if a number is armstrong or not.
+
+import java.util.Scanner
+fun main(args : Array<String>)
+{
+	println("enter a number")
+	val sc= Scanner(System.`in`)
+	val x=sc.nextInt()
+	var y=x
+	var sum=0
+	while(y > 0)
+		{
+			var d=y%10
+			sum=sum+(d*d*d)
+			y=y/10
+		}
+	if(sum == x)
+		println("armstrong number")
+	else
+		println("not armstrong number")
+}
