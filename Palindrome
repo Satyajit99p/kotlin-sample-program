@@ -1,0 +1,20 @@
+// program to check if a number is palindrome or not.
+
+import java.util.Scanner
+fun main(args : Array<String>)
+{
+	val sc= Scanner(System.`in`)
+	val x=sc.nextInt()
+	var y=x
+	var rev=0
+	while(y > 0)
+		{
+			var d=y%10
+			rev=rev*10+d
+			y=y/10
+		}
+	if(rev == x)
+		println("palindrome number")
+	else
+		println("not palindrome number")
+}
